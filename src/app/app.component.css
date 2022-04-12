@@ -1,27 +1,32 @@
-.row {
-  margin: 30px;
-  margin-left: 21%;
-}
-
-.main-container {
-  min-height: 100vh;
-  min-width: 100vh;
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  
-}  
-
-
 .title {
   padding-top: 30px;
   font-weight: 700;
 }
 
-.hero {      
-  position: relative;
+.container {
+  min-height: 100vh;
+  min-width: 100vh;
+  top: 0;
+  bottom: 0;
+  position: absolute;  
+
 }  
 
+.row {
+  margin: 30px;
+  margin-left: 21%;
+}
+
+.check-table {
+  margin-bottom: 2%; 
+  width: 50%;
+  overflow-x: auto;
+  border-radius: 15px;
+  border: 1px transparent;
+  background-color: #FDB38A;
+  position: relative;
+  left: 24.5%;
+}
 
 input[type=checkbox] {
   height: 20px;
@@ -29,21 +34,10 @@ input[type=checkbox] {
   border: 1px solid white;
 }
 
-.check-table {
-  background-color: #FDB38A;
-  border-radius: 15px;
-  border: 1px transparent;
-  width: 50%;
-  overflow-x: auto;
-  position: relative;
-  left: 24.5%;
-  margin-bottom: 2%;
-  
-}
 
 table {
- border: 1px transparent;
- position: relative;
+  border: 1px transparent;
+  position: relative;
 }
 
 th, td {
@@ -55,16 +49,11 @@ label {
   margin-left: 10px;
 }
 
-.bg-danger {
-  padding: 30px;
-}
-
 .completed-task {
+  margin-top: 3%;
   width: 200px;
   border-radius: 8px;
   border: 1px solid;
   position: relative;
   left: 24.5%;
-  margin-top: 3%;
-
 }

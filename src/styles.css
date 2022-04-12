@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+
+/* body {
+  color: white;
+  background-image: url("./assets/chicago.jpg");
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 1.5rem;
+  background-color: rgba(3, 3, 3, 0.5)
+}
+
+ */
+
+body {
+  font-family: 'Anek Kannada', sans-serif;
+  background-image: linear-gradient(to right, #de6262, #ffb88c);
+}
+

@@ -1,15 +1,31 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef} from '@angular/core';
 import { TodoItem } from './todoItem';
 import { TodoList } from './todoList';
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css',]
 })
 export class AppComponent {
+  previousUrl: string | undefined;
   title="TODO";
   showComplete=true;
+
+
+
+  constructor(private elementRef: ElementRef) {}
+/*   ngAfterViewInit() {
+      this.elementRef.nativeElement.ownerDocument
+          .body.style.background = 'url("../assets/chicago.jpg")';
+  } */
+
+
+
+
+
+
 
   private list = new TodoList('Yamila', [
     new TodoItem('Go to the gym'),
@@ -35,4 +51,5 @@ export class AppComponent {
     }
   }
 }
+
 
